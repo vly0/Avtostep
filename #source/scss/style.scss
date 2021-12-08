@@ -181,9 +181,12 @@ body {
 }
 //parametr-------------------
 .parametr-distance {
-    &::before {
+    &:before {
         content: "";
-        left: 0px;
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        left: 2px;
         top: 0px;
         z-index: 5;
         background: url(../img/icons/distance.svg) left no-repeat;
@@ -191,8 +194,11 @@ body {
     }
 }
 .parametr-fuel {
-    &::before {
+    &:before {
         content: "";
+        position: absolute;
+        width: 25px;
+        height: 25px;
         left: 0px;
         top: 0px;
         z-index: 5;
@@ -201,8 +207,11 @@ body {
     }
 }
 .parametr-engine {
-    &::before {
+    &:before {
         content: "";
+        position: absolute;
+        width: 25px;
+        height: 25px;
         left: 0px;
         top: 0px;
         z-index: 5;
@@ -211,8 +220,11 @@ body {
     }
 }
 .parametr-year {
-    &::before {
+    &:before {
         content: "";
+        position: absolute;
+        width: 25px;
+        height: 25px;
         left: 0px;
         top: 0px;
         z-index: 5;
@@ -221,8 +233,11 @@ body {
     }
 }
 .parametr-shift {
-    &::before {
+    &:before {
         content: "";
+        position: absolute;
+        width: 25px;
+        height: 25px;
         left: 0px;
         top: 0px;
         z-index: 5;
@@ -231,8 +246,11 @@ body {
     }
 }
 .parametr-transmission {
-    &::before {
+    &:before {
         content: "";
+        position: absolute;
+        width: 25px;
+        height: 25px;
         left: 0px;
         top: 0px;
         z-index: 5;
@@ -371,6 +389,7 @@ body {
         }
     }
     &__parametr {
+        position: relative;
         padding: 0px 0px 0px 25px;
         color: blue;
         font-size: 20px;

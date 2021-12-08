@@ -546,7 +546,10 @@ body {
 
 .parametr-distance:before {
   content: "";
-  left: 0px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 2px;
   top: 0px;
   z-index: 5;
   background: url(../img/icons/distance.svg) left no-repeat;
@@ -555,6 +558,9 @@ body {
 
 .parametr-fuel:before {
   content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
   left: 0px;
   top: 0px;
   z-index: 5;
@@ -564,6 +570,9 @@ body {
 
 .parametr-engine:before {
   content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
   left: 0px;
   top: 0px;
   z-index: 5;
@@ -573,6 +582,9 @@ body {
 
 .parametr-year:before {
   content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
   left: 0px;
   top: 0px;
   z-index: 5;
@@ -582,6 +594,9 @@ body {
 
 .parametr-shift:before {
   content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
   left: 0px;
   top: 0px;
   z-index: 5;
@@ -591,6 +606,9 @@ body {
 
 .parametr-transmission:before {
   content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
   left: 0px;
   top: 0px;
   z-index: 5;
@@ -749,6 +767,7 @@ body {
 }
 
 .about-car__parametr {
+  position: relative;
   padding: 0px 0px 0px 25px;
   color: blue;
   font-size: 20px;
