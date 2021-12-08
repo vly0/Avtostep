@@ -1,0 +1,384 @@
+._container {
+    max-width: 1170px;
+    padding: 0px 10px;
+    margin: 0 auto;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+
+@import "_nullstyle";
+@import "_header";
+@import "_slickslider";
+//@import "_tabs";
+body {
+    font-family: Montserrat;
+    height: 100%;
+    background: url("../img/background.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 75%;
+}
+.content {
+    flex: 1 1 auto;
+}
+.ibg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    img {
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.__hover {
+    &:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        width: 0;
+        height: 1px;
+        background-color: #261bbd;
+        bottom: -5px;
+        transition: 0.3s;
+    }
+    &:hover {
+        color: #261bbd;
+        &:after {
+            content: "";
+            left: 0;
+            width: 100%;
+        }
+    }
+}
+//-----content-----------------------------------------------------------
+.content {
+    padding-top: 100px;
+    margin: 0px 0px 15px 0px;
+    &__container {
+    }
+
+    &__car-pool {
+        margin: 0px 0px 30px 0px;
+    }
+    &__map {
+    }
+    &__car-item {
+    }
+}
+//car-pool----------------------------------
+.car-pool {
+    display: flex;
+    padding: 0px -10px;
+    &__item {
+        flex: 33.333%;
+        margin: 0px 10px;
+    }
+}
+.item-car-pool {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    &__image {
+        position: relative;
+        cursor: pointer;
+        margin: 0px 0px 10px 0px;
+
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 0px;
+            height: 0px;
+            //background-color: inherit;
+            top: 50%;
+            transition: 0.3s;
+        }
+        &:hover {
+            &:after {
+                content: "";
+                background-image: (
+                    linear-gradient(
+                        left bottom,
+                        rgba(33, 74, 168, 0.85) 0%,
+                        rgba(33, 74, 168, 0.85) 27%,
+                        rgba(33, 74, 168, 0.88) 42%,
+                        rgba(33, 74, 168, 0.89) 48%,
+                        rgba(0, 0, 0, 0.89) 50%,
+                        rgba(255, 255, 255, 0.89) 51%,
+                        rgba(255, 255, 255, 1) 100%
+                    )
+                );
+
+                //background-image: linear-gradient(242deg, #0093e9 0%, #000000 50%, #ffffff 100%);
+
+                position: absolute;
+                z-index: 5;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+            .image-car-pool {
+                &__list {
+                    color: gold;
+                    visibility: visible;
+                    left: 0;
+                }
+            }
+        }
+        img {
+            max-width: 100%;
+        }
+    }
+    &__name {
+        font-size: 28px;
+        text-transform: uppercase;
+        color: #fff;
+        margin: 0px 0px 10px 0px;
+    }
+
+    &__price {
+        font-size: 32px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+
+.image-car-pool {
+    padding: 20px 10px;
+    &__list {
+        position: relative;
+        top: 0;
+        left: -100%;
+        z-index: 10;
+        visibility: hidden;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 120%;
+        color: #fff;
+        transition: 0.3s;
+    }
+
+    &__parametr {
+        position: relative;
+        padding: 0px 0px 0px 35px;
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.parametr {
+    &::before {
+        content: "";
+        //position: absolute;
+        left: 0px;
+        top: 0px;
+        //width: 100%;
+        //height: 100%;
+        z-index: 5;
+    }
+    &-distance {
+        background: url(../../img/icons/distance.svg) left no-repeat;
+        background-size: contain;
+    }
+    &-fuel {
+        background: url(../../img/icons/fuel.svg) left no-repeat;
+        background-size: contain;
+    }
+    &-engine {
+        background: url(../../img/icons/engine.svg) left no-repeat;
+        background-size: contain;
+    }
+    &-year {
+        background: url(../../img/icons/year.svg) left no-repeat;
+        background-size: contain;
+    }
+    &-shift {
+        background: url(../../img/icons/shift.svg) left no-repeat;
+        background-size: contain;
+    }
+    &-transmission {
+        background: url(../../img/icons/transmission.svg) left no-repeat;
+        background-size: contain;
+    }
+}
+
+//map--------------------------------
+
+.map {
+    &__body {
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 25px;
+        line-height: 120%;
+        margin: 0px 0px 15px 0px;
+        color: white;
+    }
+
+    &__map {
+    }
+}
+
+//-footer---------------------
+.footer {
+    padding: 10px 0px;
+    max-height: 150px;
+    &__container {
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px -10px;
+    }
+
+    &__logo {
+        align-items: left;
+        margin: 0px 10px;
+        display: inline-block;
+        flex: 0 0 25%;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__social {
+        margin: 0px 10px;
+        flex: 0 0 33.33%;
+        display: flex;
+        padding: 0px -25px;
+    }
+
+    &__link {
+        margin: 0px 25px;
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__contacts {
+        margin: 0px 10px;
+    }
+}
+
+.contacts {
+    text-align: right;
+    font-size: 18px;
+    color: white;
+    :not(:last-child) {
+        margin: 0px 0px 10px 0px;
+    }
+    &__adress {
+    }
+
+    &__schedule {
+    }
+
+    &__mail {
+        color: white;
+    }
+}
+//car.html----car-item---------------------------
+
+.car-item {
+    display: flex;
+    max-width: 100%;
+    //justify-content: space-between;
+
+    &__images {
+        flex: 1 0 40%;
+    }
+
+    &__about {
+        flex: 0 0 60%;
+        //text-align: right;
+        margin: 0px 0px 0px 10px;
+    }
+    &__price {
+        font-size: 40px;
+    }
+}
+.images-car-item {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    &__image {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+.about-car {
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    align-items: center;
+
+    &__characteristics {
+        flex: 0 0 50%;
+    }
+    &__name {
+        padding: 0px 0px 0px 0px;
+        font-size: 30px;
+        line-height: 120%;
+        color: white;
+        margin: 0px 0px 15px 0px;
+    }
+    &__parametrs {
+        :not(:last-child) {
+            margin: 0px 0px 7px 0px;
+        }
+    }
+    &__parametr {
+        padding: 0px 0px 0px 25px;
+        color: blue;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 120%;
+        span {
+            display: inline-block;
+            color: white;
+        }
+    }
+    &__price {
+        color: blue;
+        flex: 0 0 50%;
+        font-size: 40px;
+        text-align: right;
+        width: 50px;
+        span {
+            color: #cd3220;
+            font-size: 52px;
+        }
+    }
+    &__description {
+        text-align: right;
+    }
+    &__about {
+        display: inline;
+        color: blue;
+        font-size: 20px;
+        line-height: 120%;
+        span {
+            font-size: 16px;
+            display: inline-block;
+            color: white;
+        }
+    }
+}
