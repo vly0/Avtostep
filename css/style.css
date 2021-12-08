@@ -301,14 +301,14 @@ h6 {
 
 .slider-cars .slick-arrow.slick-prev {
   left: 0;
-  background: url(../../img/icons/right-r.png) 0 0/100% no-repeat;
+  background: url(../img/icons/right-r.png) 0 0/100% no-repeat;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
 
 .slider-cars .slick-arrow.slick-next {
   right: 0;
-  background: url(../../img/icons/right-r.png) 0 0/100% no-repeat;
+  background: url(../img/icons/right-r.png) 0 0/100% no-repeat;
 }
 
 .slider-cars .slick-track {
@@ -544,39 +544,56 @@ body {
   margin-bottom: 15px;
 }
 
-.parametr::before {
+.parametr-distance::before {
   content: "";
   left: 0px;
   top: 0px;
   z-index: 5;
-}
-
-.parametr-distance {
   background: url(../img/icons/distance.svg) left no-repeat;
   background-size: contain;
 }
 
-.parametr-fuel {
+.parametr-fuel::before {
+  content: "";
+  left: 0px;
+  top: 0px;
+  z-index: 5;
   background: url(../img/icons/fuel.svg) left no-repeat;
   background-size: contain;
 }
 
-.parametr-engine {
+.parametr-engine::before {
+  content: "";
+  left: 0px;
+  top: 0px;
+  z-index: 5;
   background: url(../img/icons/engine.svg) left no-repeat;
   background-size: contain;
 }
 
-.parametr-year {
+.parametr-year::before {
+  content: "";
+  left: 0px;
+  top: 0px;
+  z-index: 5;
   background: url(../img/icons/year.svg) left no-repeat;
   background-size: contain;
 }
 
-.parametr-shift {
+.parametr-shift::before {
+  content: "";
+  left: 0px;
+  top: 0px;
+  z-index: 5;
   background: url(../img/icons/shift.svg) left no-repeat;
   background-size: contain;
 }
 
-.parametr-transmission {
+.parametr-transmission::before {
+  content: "";
+  left: 0px;
+  top: 0px;
+  z-index: 5;
   background: url(../img/icons/transmission.svg) left no-repeat;
   background-size: contain;
 }

@@ -11,12 +11,12 @@
         margin: -25px 0px 0px 0px;
         &.slick-prev {
             left: 0;
-            background: url(../../img/icons/right-r.png) 0 0 / 100% no-repeat;
+            background: url(../img/icons/right-r.png) 0 0 / 100% no-repeat;
             transform: rotate(-180deg);
         }
         &.slick-next {
             right: 0;
-            background: url(../../img/icons/right-r.png) 0 0 / 100% no-repeat;
+            background: url(../img/icons/right-r.png) 0 0 / 100% no-repeat;
         }
     }
 
