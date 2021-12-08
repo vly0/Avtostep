@@ -552,32 +552,32 @@ body {
 }
 
 .parametr-distance {
-  background: url(../../img/icons/distance.svg) left no-repeat;
+  background: url(../img/icons/distance.svg) left no-repeat;
   background-size: contain;
 }
 
 .parametr-fuel {
-  background: url(../../img/icons/fuel.svg) left no-repeat;
+  background: url(../img/icons/fuel.svg) left no-repeat;
   background-size: contain;
 }
 
 .parametr-engine {
-  background: url(../../img/icons/engine.svg) left no-repeat;
+  background: url(../img/icons/engine.svg) left no-repeat;
   background-size: contain;
 }
 
 .parametr-year {
-  background: url(../../img/icons/year.svg) left no-repeat;
+  background: url(../img/icons/year.svg) left no-repeat;
   background-size: contain;
 }
 
 .parametr-shift {
-  background: url(../../img/icons/shift.svg) left no-repeat;
+  background: url(../img/icons/shift.svg) left no-repeat;
   background-size: contain;
 }
 
 .parametr-transmission {
-  background: url(../../img/icons/transmission.svg) left no-repeat;
+  background: url(../img/icons/transmission.svg) left no-repeat;
   background-size: contain;
 }
 
