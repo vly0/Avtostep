@@ -340,6 +340,7 @@ body {
 //car.html----car-item---------------------------
 
 .car-item {
+    padding: 0px 10px;
     display: flex;
     max-width: 100%;
     //justify-content: space-between;
@@ -350,8 +351,6 @@ body {
 
     &__about {
         flex: 0 0 60%;
-        //text-align: right;
-        margin: 0px 0px 0px 10px;
     }
     &__price {
         font-size: 40px;
@@ -424,5 +423,282 @@ body {
             display: inline-block;
             color: white;
         }
+    }
+}
+//
+@media (max-width: 1170px) {
+    //-footer---------------------
+    .footer {
+        &__body {
+            padding: 0px -7px;
+        }
+
+        &__logo {
+            margin: 0px 7px;
+            flex: 0 0 20%;
+        }
+
+        &__social {
+            padding: 0px -25px;
+        }
+
+        &__link {
+            margin: 0px 25px;
+        }
+
+        &__contacts {
+            margin: 0px 10px;
+        }
+    }
+
+    .contacts {
+        font-size: 16px;
+        :not(:last-child) {
+            margin: 0px 0px 8px 0px;
+        }
+    }
+    //car.html----car-item---------------------------
+
+    .car-item {
+        padding: 0px 10px;
+        display: flex;
+        max-width: 100%;
+        //justify-content: space-between;
+
+        &__images {
+            flex: 1 0 45%;
+        }
+
+        &__about {
+            flex: 0 0 55%;
+        }
+    }
+}
+@media (max-width: 1000px) {
+    //-footer---------------------
+    .footer {
+        padding: 8px 0px;
+        max-height: 150px;
+
+        &__body {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px -6px;
+        }
+
+        &__logo {
+            align-items: left;
+            margin: 0px 6px;
+            display: inline-block;
+            flex: 0 0 25%;
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &__social {
+            //margin: 0px 10px;
+            flex: 0 0 40%;
+            display: flex;
+            padding: 0px -20px;
+        }
+
+        &__link {
+            margin: 0px 20px;
+            img {
+                max-width: 100%;
+            }
+        }
+
+        &__contacts {
+            margin: 0px 10px;
+        }
+    }
+
+    .contacts {
+        font-size: 15px;
+        :not(:last-child) {
+            margin: 0px 0px 7px 0px;
+        }
+    }
+    .about-car {
+        &__name {
+            font-size: 25px;
+            margin: 0px 0px 12px 0px;
+        }
+        &__parametrs {
+            margin: 0px 5px 0px 0px;
+            :not(:last-child) {
+                margin: 0px 0px 5px 0px;
+            }
+        }
+        &__parametr {
+            position: relative;
+            padding: 0px 0px 0px 25px;
+            font-size: 18px;
+        }
+        &__price {
+            color: blue;
+            flex: 0 0 50%;
+            font-size: 32px;
+            text-align: right;
+            width: 50px;
+            span {
+                color: #cd3220;
+                font-size: 40px;
+            }
+        }
+
+        &__about {
+            font-size: 18px;
+            line-height: 120%;
+            span {
+                font-size: 14px;
+                display: inline-block;
+                color: white;
+            }
+        }
+    }
+}
+@media (max-width: 850px) {
+    .car-item {
+        flex-wrap: wrap;
+
+        &__images {
+            flex: 0 0 100%;
+        }
+
+        &__about {
+            flex: 0 0 100%;
+        }
+    }
+
+    .about-car {
+        display: flex;
+        text-align: left;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &__characteristics {
+            flex: 0 0 50%;
+        }
+        &__name {
+            font-size: 25px;
+            line-height: 120%;
+            margin: 0px 0px 15px 0px;
+        }
+
+        &__parametr {
+            font-size: 18px;
+        }
+        &__price {
+            font-size: 40px;
+            span {
+                font-size: 52px;
+            }
+        }
+
+        &__about {
+            font-size: 18px;
+            span {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        &__logo {
+            display: none;
+        }
+
+        &__social {
+            flex: 0 0 50%;
+            display: flex;
+        }
+    }
+
+    .contacts {
+        font-size: 18px;
+        :not(:last-child) {
+            margin: 0px 0px 7px 0px;
+        }
+    }
+}
+@media (max-width: 690px) {
+    .footer {
+        &__body {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__logo {
+            display: none;
+        }
+
+        &__social {
+            flex: 0 0 80%;
+            display: flex;
+            margin: 0px 0px 10px 0px;
+        }
+    }
+
+    .contacts {
+        text-align: center;
+        font-size: 16px;
+        :not(:last-child) {
+            margin: 0px 0px 7px 0px;
+        }
+    }
+}
+@media (max-width: 580px) {
+    .about-car {
+        &__characteristics {
+            flex: 0 0 100%;
+        }
+        &__name {
+            padding: 0px 0px 0px 0px;
+            font-size: 30px;
+            line-height: 120%;
+            color: white;
+            margin: 0px 0px 15px 0px;
+        }
+        &__parametrs {
+            margin: 0px 0px 10px 0px;
+            :not(:last-child) {
+                margin: 0px 0px 7px 0px;
+            }
+        }
+        &__parametr {
+            position: relative;
+            padding: 0px 0px 0px 25px;
+            color: blue;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 120%;
+            span {
+                display: inline-block;
+                color: white;
+            }
+        }
+        &__price {
+            order: 3;
+            color: blue;
+            flex: 0 0 100%;
+            font-size: 40px;
+            text-align: right;
+            width: 50px;
+            span {
+                color: #cd3220;
+                font-size: 52px;
+            }
+        }
+        &__description {
+            text-align: left;
+        }
+    }
+    .contacts {
+        font-size: 14px;
     }
 }

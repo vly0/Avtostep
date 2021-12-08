@@ -82,6 +82,104 @@
         }
     }
 }
+@media (max-width: 1170px) {
+    .header {
+        &__logo {
+            flex: 0 0 250px;
+        }
+        &__list {
+            margin: 0px -8px;
+        }
+        &__link {
+            padding: 0px 8px;
+            font-size: 22px;
+            margin: 0px 0px 0px 18px;
+        }
+    }
+}
+@media (max-width: 1020px) {
+    .header {
+        &__logo {
+            flex: 0 0 230px;
+        }
+        &__list {
+            margin: 0px -6px;
+        }
+        &__link {
+            padding: 0px 6px;
+            font-size: 20px;
+            margin: 0px 0px 0px 15px;
+        }
+    }
+}
+@media (max-width: 910px) {
+    .header {
+        &__logo {
+            flex: 0 0 220px;
+        }
+        &__list {
+            margin: 0px -4px;
+        }
+        &__link {
+            padding: 0px 4px;
+            font-size: 19px;
+            margin: 0px 0px 0px 10px;
+        }
+        &__link-tel {
+            &::before {
+                content: "";
+                background: url(../img/icons/phone.png) left no-repeat;
+                background-size: cover;
+                position: absolute;
+                left: -15px;
+                top: 0;
+                width: 40px;
+                height: 40px;
+                z-index: 5;
+            }
+            display: inline-block;
+            text-align: center;
+            span {
+                display: inline-block;
+                margin: 0px 0px 5px 0px;
+            }
+        }
+    }
+}
+@media (max-width: 870px) {
+    .header {
+        &__logo {
+            flex: 0 0 180px;
+        }
+        &__list {
+            margin: 0px -4px;
+        }
+        &__link {
+            padding: 0px 4px;
+            font-size: 18px;
+            margin: 0px 0px 0px 10px;
+        }
+        &__link-tel {
+            &::before {
+                content: "";
+                background: url(../img/icons/phone.png) left no-repeat;
+                background-size: cover;
+                position: absolute;
+                left: -15px;
+                top: 0;
+                width: 20px;
+                height: 20px;
+                z-index: 5;
+            }
+            display: inline-block;
+            text-align: center;
+            span {
+                display: inline-block;
+                margin: 0px 0px 5px 0px;
+            }
+        }
+    }
+}
 
 @media (max-width: 767px) {
     .header {
