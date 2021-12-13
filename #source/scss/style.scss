@@ -847,6 +847,11 @@ body {
             margin: 0px 0px 7px 0px;
         }
     }
+    .service {
+        &__favors {
+            justify-content: center;
+        }
+    }
 }
 @media (max-width: 690px) {
     .footer {

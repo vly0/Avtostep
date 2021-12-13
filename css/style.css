@@ -1373,6 +1373,11 @@ body {
   .contacts :not(:last-child) {
     margin: 0px 0px 7px 0px;
   }
+  .service__favors {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 @media (max-width: 690px) {
