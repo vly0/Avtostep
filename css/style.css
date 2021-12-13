@@ -109,7 +109,7 @@ h6 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(20, 15, 14, 0.8);
+  background-color: rgba(0, 0, 200, 0.95);
   z-index: 2;
 }
 
@@ -128,8 +128,8 @@ h6 {
 
 .header__logo {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 300px;
-          flex: 0 0 300px;
+      -ms-flex: 0 0 280px;
+          flex: 0 0 280px;
   position: relative;
   z-index: 3;
 }
@@ -332,7 +332,7 @@ h6 {
   }
   .header__burger span {
     position: absolute;
-    background-color: #000;
+    background-color: #fff;
     width: 100%;
     height: 2px;
     left: 0;
@@ -518,14 +518,14 @@ body {
   left: 50%;
   width: 0;
   height: 1px;
-  background-color: #261bbd;
+  background-color: gold;
   bottom: -5px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .__hover:hover {
-  color: #261bbd;
+  color: gold;
 }
 
 .__hover:hover:after {
@@ -535,12 +535,107 @@ body {
 }
 
 .content {
-  padding-top: 100px;
+  padding-top: 115px;
   margin: 0px 0px 15px 0px;
 }
 
-.content__car-pool {
+.content__about-us {
+  padding: 0px 0px 0px 0px;
+}
+
+.content__service {
+  margin: 20px 0px 20px 0px;
+}
+
+.content__cars {
   margin: 0px 0px 30px 0px;
+}
+
+.content__car-item {
+  margin: 10px 0px 0px 0px;
+}
+
+#about-us {
+  margin-top: -110px;
+  padding-top: 110px;
+}
+
+.about-us {
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.about-us__title {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 120%;
+  color: white;
+  margin: 0px 0px 10px 0px;
+}
+
+.about-us__about {
+  font-size: 22px;
+  line-height: 110%;
+}
+
+.service__title {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  margin: 0px 0px 25px 0px;
+  font-weight: 500;
+}
+
+.service__favors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px -5px;
+}
+
+.service__favor {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 210px;
+          flex: 0 0 210px;
+  margin: 0px 5px 10px 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  height: 210px;
+  background-color: rgba(53, 47, 47, 0.925);
+  border-radius: 50%;
+  padding: 10px 0px;
+  font-size: 20px;
+  color: gold;
+  line-height: 110%;
+}
+
+#cars {
+  margin-top: -110px;
+  padding-top: 110px;
+}
+
+.cars__title {
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+  color: white;
 }
 
 .car-pool {
@@ -718,15 +813,137 @@ body {
   background-size: contain;
 }
 
-.map__body {
-  text-align: center;
+#contacts {
+  margin-top: -110px;
+  padding-top: 110px;
 }
 
-.map__title {
-  font-size: 25px;
-  line-height: 120%;
-  margin: 0px 0px 15px 0px;
+.content-contacts__title {
+  font-size: 35px;
+  font-weight: 500;
   color: white;
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+}
+
+.content-contacts__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-contacts__phone-numbers {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+}
+
+.content-contacts__map {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
+}
+
+.content-contacts__map iframe {
+  max-width: 100%;
+}
+
+.phone-numbers__auto-phone {
+  margin: 0px 0px 10px 0px;
+}
+
+.auto-phone :not(:last-child) {
+  margin: 0px 0px 7px 0px;
+}
+
+.auto-phone__title {
+  font-size: 35px;
+  color: white;
+}
+
+.auto-phone__phone {
+  padding: 0px 0px 0px 25px;
+  font-size: 28px;
+  position: relative;
+  color: white;
+  display: block;
+}
+
+.auto-phone__phone:before {
+  content: "";
+  background: url(../img/icons/phone.png) left no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.auto-phone__viber {
+  padding: 0px 0px 0px 25px;
+  font-size: 28px;
+  position: relative;
+  color: white;
+  display: block;
+}
+
+.auto-phone__viber:before {
+  content: "";
+  background: url(../img/icons/viber.png) left no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.auto-phone__whatsapp {
+  font-size: 28px;
+  padding: 0px 0px 0px 25px;
+  position: relative;
+  color: white;
+  display: block;
+}
+
+.auto-phone__whatsapp:before {
+  content: "";
+  background: url(../img/icons/whatsapp.png) left no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+}
+
+.parts-phone :not(:last-child) {
+  margin: 0px 0px 7px 0px;
+}
+
+.parts-phone__title {
+  font-size: 35px;
+  color: white;
+}
+
+.parts-phone__viber {
+  padding: 0px 0px 0px 25px;
+  font-size: 28px;
+  position: relative;
+  color: white;
+  display: block;
+}
+
+.parts-phone__viber:before {
+  content: "";
+  background: url(../img/icons/viber.png) left no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
 }
 
 .footer {
@@ -902,7 +1119,6 @@ body {
 }
 
 .about-car__about {
-  display: inline;
   color: blue;
   font-size: 20px;
   line-height: 120%;
@@ -910,8 +1126,14 @@ body {
 
 .about-car__about span {
   font-size: 16px;
-  display: inline-block;
+  display: block;
   color: white;
+  text-align: left;
+}
+
+.blue {
+  color: blue;
+  text-align-last: left;
 }
 
 @media (max-width: 1170px) {
@@ -1046,7 +1268,6 @@ body {
   }
   .about-car__about span {
     font-size: 14px;
-    display: inline-block;
     color: white;
   }
 }
@@ -1100,11 +1321,41 @@ body {
     font-size: 18px;
   }
   .about-car__about span {
+    color: #ffffff;
     font-size: 15px;
   }
 }
 
 @media (max-width: 767px) {
+  .content-contacts__title {
+    font-size: 35px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+  }
+  .content-contacts__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .content-contacts__phone-numbers {
+    margin: 0px 0px 10px 0px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .content-contacts__map {
+    text-align: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .content-contacts__map iframe {
+    max-width: 100%;
+  }
   .footer__logo {
     display: none;
   }

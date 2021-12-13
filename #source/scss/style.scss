@@ -50,12 +50,12 @@ body {
         left: 50%;
         width: 0;
         height: 1px;
-        background-color: #261bbd;
+        background-color: gold;
         bottom: -5px;
         transition: 0.3s;
     }
     &:hover {
-        color: #261bbd;
+        color: gold;
         &:after {
             content: "";
             left: 0;
@@ -65,20 +65,97 @@ body {
 }
 //-----content-----------------------------------------------------------
 .content {
-    padding-top: 100px;
+    padding-top: 115px;
     margin: 0px 0px 15px 0px;
     &__container {
     }
+    &__about-us {
+        padding: 0px 0px 0px 0px;
+    }
+    &__service {
+        margin: 20px 0px 20px 0px;
+    }
 
-    &__car-pool {
+    &__cars {
         margin: 0px 0px 30px 0px;
     }
-    &__map {
+    &__contacts {
     }
     &__car-item {
+        margin: 10px 0px 0px 0px;
     }
 }
-//car-pool----------------------------------
+//about-us---------------------------------------
+#about-us {
+    margin-top: -110px;
+    padding-top: 110px;
+}
+.about-us {
+    padding: 0px 15px;
+    margin: 0 auto;
+    &__title {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 120%;
+        color: white;
+        margin: 0px 0px 10px 0px;
+        //text-align: center;
+    }
+    &__about {
+        font-size: 22px;
+        line-height: 110%;
+    }
+}
+//service----------------------------
+.service {
+    &__title {
+        font-size: 35px;
+        color: white;
+        text-align: center;
+        margin: 0px 0px 25px 0px;
+        font-weight: 500;
+    }
+    &__favors {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0px -5px;
+    }
+    &__favor {
+        flex: 0 0 210px;
+        margin: 0px 5px 10px 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        z-index: 2;
+        height: 210px;
+        background-color: rgba(53, 47, 47, 0.925);
+        border-radius: 50%;
+        padding: 10px 0px;
+        font-size: 20px;
+        color: gold;
+        line-height: 110%;
+    }
+}
+//cars----------------------------------
+#cars {
+    margin-top: -110px;
+    padding-top: 110px;
+}
+.cars {
+    &__title {
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+        margin: 0px 0px 20px 0px;
+        color: white;
+    }
+    &__car-pool {
+    }
+}
 .car-pool {
     display: flex;
     padding: 0px -10px;
@@ -259,21 +336,131 @@ body {
     }
 }
 
-//map--------------------------------
-
-.map {
-    &__body {
+//contacts--------------------------------
+#contacts {
+    margin-top: -110px;
+    padding-top: 110px;
+}
+.content-contacts {
+    &__title {
+        font-size: 35px;
+        font-weight: 500;
+        color: white;
         text-align: center;
+        margin: 0px 0px 20px 0px;
     }
 
-    &__title {
-        font-size: 25px;
-        line-height: 120%;
-        margin: 0px 0px 15px 0px;
-        color: white;
+    &__body {
+        display: flex;
+    }
+
+    &__phone-numbers {
+        flex: 0 0 60%;
     }
 
     &__map {
+        flex: 0 0 40%;
+        iframe {
+            max-width: 100%;
+        }
+    }
+}
+.phone-numbers {
+    &__auto-phone {
+        margin: 0px 0px 10px 0px;
+    }
+
+    &__parts-phone {
+    }
+}
+.auto-phone {
+    :not(:last-child) {
+        margin: 0px 0px 7px 0px;
+    }
+    &__title {
+        font-size: 35px;
+        color: white;
+    }
+
+    &__phone {
+        padding: 0px 0px 0px 25px;
+        font-size: 28px;
+        position: relative;
+        color: white;
+        display: block;
+        &:before {
+            content: "";
+            background: url(../img/icons/phone.png) left no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    &__viber {
+        padding: 0px 0px 0px 25px;
+        font-size: 28px;
+        position: relative;
+        color: white;
+        display: block;
+        &:before {
+            content: "";
+            background: url(../img/icons/viber.png) left no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    &__whatsapp {
+        font-size: 28px;
+        padding: 0px 0px 0px 25px;
+        position: relative;
+        color: white;
+        display: block;
+        &:before {
+            content: "";
+            background: url(../img/icons/whatsapp.png) left no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
+.parts-phone {
+    :not(:last-child) {
+        margin: 0px 0px 7px 0px;
+    }
+    &__title {
+        font-size: 35px;
+        color: white;
+    }
+
+    &__viber {
+        padding: 0px 0px 0px 25px;
+        font-size: 28px;
+        position: relative;
+        color: white;
+        display: block;
+        &:before {
+            content: "";
+            background: url(../img/icons/viber.png) left no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 25px;
+            height: 25px;
+        }
     }
 }
 
@@ -414,16 +601,21 @@ body {
         text-align: right;
     }
     &__about {
-        display: inline;
+        //display: inline;
         color: blue;
         font-size: 20px;
         line-height: 120%;
         span {
             font-size: 16px;
-            display: inline-block;
+            display: block;
             color: white;
+            text-align: left;
         }
     }
+}
+.blue {
+    color: blue;
+    text-align-last: left;
 }
 //
 @media (max-width: 1170px) {
@@ -555,7 +747,6 @@ body {
             line-height: 120%;
             span {
                 font-size: 14px;
-                display: inline-block;
                 color: white;
             }
         }
@@ -602,6 +793,7 @@ body {
         &__about {
             font-size: 18px;
             span {
+                color: #ffffff;
                 font-size: 15px;
             }
         }
@@ -609,6 +801,35 @@ body {
 }
 
 @media (max-width: 767px) {
+    .content-contacts {
+        &__title {
+            font-size: 35px;
+            font-weight: 500;
+            color: white;
+            text-align: center;
+            margin: 0px 0px 20px 0px;
+        }
+
+        &__body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__phone-numbers {
+            margin: 0px 0px 10px 0px;
+            flex: 0 0 100%;
+        }
+
+        &__map {
+            text-align: center;
+            flex: 0 0 100%;
+            iframe {
+                max-width: 100%;
+            }
+        }
+    }
+
+    //-footer---------------------
     .footer {
         &__logo {
             display: none;
@@ -690,7 +911,7 @@ body {
             text-align: right;
             width: 50px;
             span {
-                color: #cd3220;
+                color: #ffffff;
                 font-size: 52px;
             }
         }
