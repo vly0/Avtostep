@@ -1055,6 +1055,10 @@ body {
   max-width: 100%;
 }
 
+.images-car-item__image video {
+  max-width: 100%;
+}
+
 .about-car {
   display: -webkit-box;
   display: -ms-flexbox;
